@@ -10,15 +10,16 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body class="antialiased bg-white text-slate-800" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <a class="sr-only focus:not-sr-only p-2" href="#main">İçeriğe atla</a>
     <div class="min-h-screen flex flex-col">
       <!-- Header (from attachments) -->
-      <header class="border-b bg-white">
+      <header class="border-b bg-white" role="banner">
         <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
           <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-slate-200 rounded-full"></div>
+            <div class="w-10 h-10 bg-slate-200 rounded-full" role="img" aria-label="Korgezi logo"></div>
             <span class="font-bold">Korgezi</span>
           </div>
-          <nav class="hidden md:flex gap-6 text-sm text-slate-800">
+          <nav class="hidden md:flex gap-6 text-sm text-slate-800" aria-label="Ana navigasyon">
             <a href="#home">Ana</a>
             <a href="#tours">Turlar</a>
             <a href="#about">Hakkımızda</a>
@@ -34,9 +35,9 @@
 
       <main class="flex-1">
         <!-- Hero (from 1.html) -->
-        <section id="home" class="bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR9EQAD4E7Lw4aVcD-NwtWH3QBLu8hhAwe6ZTGIMg5-Lqn2xzwb_Zmd0Vrw1PidGnsQQFXrn0H8qMQ98gkCK1sjgFxPFzQVHhdD_q24jQwTAg76qIp5FYboSULUC8ydeOraISKctTM-5Y21net5JNOO3Pr81Bo4r-yrbG25OZ0LWEG31h5EGwjNLVMhjOwOsVJUP9SZOTKSuFoFDKKFV5MRjPRojPlJ_VEbLmaYi_zcGFoLApR6gWGfrIk1yRNJd5aZ5yRJ65iJrg')] bg-cover bg-center">
+        <section id="home" class="bg-cover bg-center" role="region" aria-labelledby="home-heading" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR9EQAD4E7Lw4aVcD-NwtWH3QBLu8hhAwe6ZTGIMg5-Lqn2xzwb_Zmd0Vrw1PidGnsQQFXrn0H8qMQ98gkCK1sjgFxPFzQVHhdD_q24jQwTAg76qIp5FYboSULUC8ydeOraISKctTM-5Y21net5JNOO3Pr81Bo4r-yrbG25OZ0LWEG31h5EGwjNLVMhjOwOsVJUP9SZOTKSuFoFDKKFV5MRjPRojPlJ_VEbLmaYi_zcGFoLApR6gWGfrIk1yRNJd5aZ5yRJ65iJrg');">
           <div class="max-w-6xl mx-auto p-10 text-center text-white" style="background: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0));">
-            <h1 class="text-3xl md:text-5xl font-bold">Türkiye'yi Korgezi ile Keşfedin</h1>
+            <h1 id="home-heading" class="text-3xl md:text-5xl font-bold">Türkiye'yi Korgezi ile Keşfedin</h1>
             <p class="mt-4 text-md md:text-lg">Unutulmaz turlar, deneyimli rehberler ve güvenli rezervasyonlar.</p>
             <div class="mt-6 flex justify-center gap-4">
               <a href="#reservation" class="px-6 py-3 bg-[#138aec] text-white rounded-md">Tur Rezervasyonu Yap</a>
@@ -46,13 +47,13 @@
         </section>
 
         <!-- Tours (from 2.html) -->
-        <section id="tours" class="py-12">
+        <section id="tours" class="py-12" role="region" aria-labelledby="tours-heading">
           <div class="max-w-6xl mx-auto p-6">
-            <h2 class="text-2xl font-semibold mb-4">Turlar</h2>
+            <h2 id="tours-heading" class="text-2xl font-semibold mb-4">Turlar</h2>
             <div class="grid gap-6 md:grid-cols-2">
               <!-- Tour cards (excerpted) -->
               <article class="flex gap-4 bg-white rounded shadow p-4">
-                <div class="w-36 h-24 bg-cover rounded" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDs8MDSXrn7wpB-r4VU3GxFOEh0rhXRzb0mf_y75XY2j8d2RSMVuHuRW-COZajMhKj2Ei75n82RUxBfL4Fy0gSeZ-uFAn6t6qv4nSXP6h4yIOKktJ0VvFuD9E-dyrE0cK8ZsB6rEEnVNJdCQMvMeuT5i_GL1VsAchaSn-ADBeF7UjnXw_0J6TPNTIQVgrL2iKPqjEiGSa8L6vQYqcVwElGt4ACLU0CAWCg-9gH7pIutVtBTdGApbSYIXKPmJoLljnMIT0jfJYmu0N8');"></div>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs8MDSXrn7wpB-r4VU3GxFOEh0rhXRzb0mf_y75XY2j8d2RSMVuHuRW-COZajMhKj2Ei75n82RUxBfL4Fy0gSeZ-uFAn6t6qv4nSXP6h4yIOKktJ0VvFuD9E-dyrE0cK8ZsB6rEEnVNJdCQMvMeuT5i_GL1VsAchaSn-ADBeF7UjnXw_0J6TPNTIQVgrL2iKPjEiGSa8L6vQYqcVwElGt4ACLU0CAWCg-9gH7pIutVtBTdGApbSYIXKPmJoLljnMIT0jfJYmu0N8" alt="Ege kıyıları manzarası" class="w-36 h-24 object-cover rounded" loading="lazy" />
                 <div>
                   <h3 class="font-semibold">Ege Kıyıları Turu</h3>
                   <p class="text-sm text-slate-600">4 gün, tarihi ve doğal güzellikleri keşfedin.</p>
@@ -63,7 +64,7 @@
                 </div>
               </article>
               <article class="flex gap-4 bg-white rounded shadow p-4">
-                <div class="w-36 h-24 bg-cover rounded" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGvw9dOZN5aiItFWOGTyrIntjwIHzLDIhSm4a7RVmJb4JTG_az7GUIXHsOOTc0HkMPqA0RGU2zlQBkY47e280RuitKDY7tBq1MYj1pJnUn-VGlcXFsq0zerrrjWuSrlBOGP5HELOQvPG790Ghd4HbGrx2AEwOMqklctD1z9xaabCZ35ZXPEC6I56ynBerodUZQUBIJZq3VKy4iSER6oDbRl5mgg0H5kH14it1X_tBGjfcaotPlWSDDXQD5SHVDssn4JHewFwp_pWc');"></div>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGvw9dOZN5aiItFWOGTyrIntjwIHzLDIhSm4a7RVmJb4JTG_az7GUIXHsOOTc0HkMPqA0RGU2zlQBkY47e280RuitKDY7tBq1MYj1pJnUn-VGlcXFsq0zerrrjWuSrlBOGP5HELOQvPG790Ghd4HbGrx2AEwOMqklctD1z9xaabCZ35ZXPEC6I56ynBerodUZQUBIJZq3VKy4iSER6oDbRl5mgg0H5kH14it1X_tBGjfcaotPlWSDDXQD5SHVDssn4JHewFwp_pWc" alt="Kapadokya balon turu" class="w-36 h-24 object-cover rounded" loading="lazy" />
                 <div>
                   <h3 class="font-semibold">Kapadokya Macerası</h3>
                   <p class="text-sm text-slate-600">3 gün, balon turu ve yer altı şehirleri.</p>
@@ -78,56 +79,56 @@
         </section>
 
         <!-- Reservation (from 3.html) -->
-        <section id="reservation" class="py-12 bg-gray-50">
+        <section id="reservation" class="py-12 bg-gray-50" role="region" aria-labelledby="reservation-heading">
           <div class="max-w-3xl mx-auto p-6">
-            <h2 class="text-2xl font-semibold mb-4">Rezervasyon Talebi</h2>
-            <form action="#" class="space-y-4" aria-label="Rezervasyon Formu">
+            <h2 id="reservation-heading" class="text-2xl font-semibold mb-4">Rezervasyon Talebi</h2>
+            <form action="#" class="space-y-4" aria-label="Rezervasyon Formu" novalidate>
               <div>
-                <label class="block text-sm font-medium">Ad Soyad</label>
-                <input name="fullname" required class="mt-1 block w-full rounded border p-3" placeholder="Adınızı girin" />
+                <label for="fullname" class="block text-sm font-medium">Ad Soyad</label>
+                <input id="fullname" name="fullname" aria-required="true" required class="mt-1 block w-full rounded border p-3" placeholder="Adınızı girin" />
               </div>
               <div>
-                <label class="block text-sm font-medium">E-posta</label>
-                <input name="email" type="email" required class="mt-1 block w-full rounded border p-3" placeholder="mail@ornek.com" />
+                <label for="email" class="block text-sm font-medium">E-posta</label>
+                <input id="email" name="email" type="email" aria-required="true" required class="mt-1 block w-full rounded border p-3" placeholder="mail@ornek.com" />
               </div>
               <div>
-                <label class="block text-sm font-medium">Seçilen Tur</label>
-                <select name="tour" required class="mt-1 block w-full rounded border p-3">
+                <label for="tour" class="block text-sm font-medium">Seçilen Tur</label>
+                <select id="tour" name="tour" required class="mt-1 block w-full rounded border p-3" aria-required="true">
                   <option value="ege">Ege Kıyıları</option>
                   <option value="kapadokya">Kapadokya</option>
                 </select>
               </div>
               <div>
-                <label class="block text-sm font-medium">Katılım Tarihi</label>
-                <input name="date" type="date" required class="mt-1 block w-full rounded border p-3" />
+                <label for="date" class="block text-sm font-medium">Katılım Tarihi</label>
+                <input id="date" name="date" type="date" required class="mt-1 block w-full rounded border p-3" aria-required="true" />
               </div>
               <div>
-                <label class="block text-sm font-medium">Notlar / Özel İstek</label>
-                <textarea name="notes" class="mt-1 block w-full rounded border p-3" rows="4" placeholder="Özel isteğinizi yazın"></textarea>
+                <label for="notes" class="block text-sm font-medium">Notlar / Özel İstek</label>
+                <textarea id="notes" name="notes" class="mt-1 block w-full rounded border p-3" rows="4" placeholder="Özel isteğinizi yazın"></textarea>
               </div>
               <div>
-                <button type="submit" class="px-4 py-3 bg-blue-600 text-white rounded">Gönder</button>
+                <button type="submit" class="px-4 py-3 bg-blue-600 text-white rounded">Rezervasyonu Gönder</button>
               </div>
             </form>
           </div>
         </section>
 
         <!-- Gallery (from 4.html) -->
-        <section id="gallery" class="py-12">
+        <section id="gallery" class="py-12" role="region" aria-labelledby="gallery-heading">
           <div class="max-w-6xl mx-auto p-6">
-            <h2 class="text-2xl font-semibold mb-4">Galeri</h2>
+            <h2 id="gallery-heading" class="text-2xl font-semibold mb-4">Galeri</h2>
             <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              <figure><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVqJDBfMa01nx90-SRIjaOYWqJ7H_vPJV82yO9GqVtFgM0AB-wOSGfiLJhqOBtPXiBTZrIp6_IouzZWmM79nu8joyXq4CXzj6REK37sThjFLaKhZm0fLa71Ld-I5XTWwvKcw0kKz34QGrd4G85hWNc0yyVSTs8VPmRA3P-KwJkPhB96LQgGCWdFSrXUtVjdLXKL8hKmJCu638XLuMbmINfXb9DrWhJvNVDFr2LJMBfFqbqolFcV_Qmvm2imlQElK0-KXJFO6Pyhf4" alt="Tur foto 1" loading="lazy" class="w-full rounded"/></figure>
-              <figure><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUme9GeZaLKlKq1ZqTAiaDTpEuhVQojH87RFO8KodHYg9xwinZQfzemNo33ffOR36eC7jHfHN9VRXpchVKnX7KyG7YWiju61XoZFGtDSaFt0qoBYzsaM6U4N_tPUxg6seC2mIwqk4iV1QvweQHNNYEmtg3XYKjAxHKedC-hwP8r0ABP_z_34eGLJS77WHwPIJL34DO_xb0SfO6TJggGguEft16Z9Wk2gcWuCTrOd-quL_snQdRO7ju2ivhnNUAzX11D-dlcMuoOZk" alt="Tur foto 2" loading="lazy" class="w-full rounded"/></figure>
-              <figure><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuASZkCiyy1HPsGIfv6cy5e8BFk7-86KcUqf8GhFlEyFpYvfgxA0JffvsUKlqBwu0wW1hLUVrTxpJJHkyZs-xJ3Kh2F7NDaiyhr_ROp0D8awU6Rw61srN6o28mFceEe7hqweyqlp_mI_8WGMOnA7B50wgpQhJR72JK996gjejsBQch7xumydItJwbeW9hHPHjJ00gMpOuqeBbRVeZfZbfxphvA-VuKFNpXwuLSHw8BcQDNxNVA5s9iYm8ctmD7HvxYZFHBzbta2s91o" alt="Tur foto 3" loading="lazy" class="w-full rounded"/></figure>
+              <figure><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVqJDBfMa01nx90-SRIjaOYWqJ7H_vPJV82yO9GqVtFgM0AB-wOSGfiLJhqOBtPXiBTZrIp6_IouzZWmM79nu8joyXq4CXzj6REK37sThjFLaKhZm0fLa71Ld-I5XTWwvKcw0kKz34QGrd4G85hWNc0yyVSTs8VPmRA3P-KwJkPhB96LQgGCWdFSrXUtVjdLXKL8hKmJCu638XLuMbmINfXb9DrWhJvNVDFr2LJMBfFqbqolFcV_Qmvm2imlQElK0-KXJFO6Pyhf4" alt="Pamukkale travertenleri" loading="lazy" class="w-full rounded"/></figure>
+              <figure><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUme9GeZaLKlKq1ZqTAiaDTpEuhVQojH87RFO8KodHYg9xwinZQfzemNo33ffOR36eC7jHfHN9VRXpchVKnX7KyG7YWiju61XoZFGtDSaFt0qoBYzsaM6U4N_tPUxg6seC2mIwqk4iV1QvweQHNNYEmtg3XYKjAxHKedC-hwP8r0ABP_z_34eGLJS77WHwPIJL34DO_xb0SfO6TJggGguEft16Z9Wk2gcWuCTrOd-quL_snQdRO7ju2ivhnNUAzX11D-dlcMuoOZk" alt="Kapadokya balonlar" loading="lazy" class="w-full rounded"/></figure>
+              <figure><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuASZkCiyy1HPsGIfv6cy5e8BFk7-86KcUqf8GhFlEyFpYvfgxA0JffvsUKlqBwu0wW1hLUVrTxpJJHkyZs-xJ3Kh2F7NDaiyhr_ROp0D8awU6Rw61srN6o28mFceEe7hqweyqlp_mI_8WGMOnA7B50wgpQhJR72JK996gjejsBQch7xumydItJwbeW9hHPHjJ00gMpOuqeBbRVeZfZbfxphvA-VuKFNpXwuLSHw8BcQDNxNVA5s9iYm8ctmD7HvxYZFHBzbta2s91o" alt="Ege sahil gün batımı" loading="lazy" class="w-full rounded"/></figure>
             </div>
           </div>
         </section>
 
         <!-- About (from 1.html & 5.html) -->
-        <section id="about" class="py-12 bg-white">
+        <section id="about" class="py-12 bg-white" role="region" aria-labelledby="about-heading">
           <div class="max-w-6xl mx-auto p-6">
-            <h2 class="text-2xl font-semibold mb-4">Hakkımızda</h2>
+            <h2 id="about-heading" class="text-2xl font-semibold mb-4">Hakkımızda</h2>
             <p class="text-slate-600 mb-4">Korgezi, Türkiye'nin benzersiz kültürel ve doğal güzelliklerini keşfetmeyi kolaylaştıran bir tur platformudur. Misyonumuz güvenli, sürdürülebilir ve unutulmaz deneyimler sunmaktır.</p>
             <div class="grid gap-6 md:grid-cols-2">
               <div>
@@ -152,9 +153,9 @@
         </section>
 
         <!-- Contact (from 6.html) -->
-        <section id="contact" class="py-12 bg-gray-50">
+        <section id="contact" class="py-12 bg-gray-50" role="region" aria-labelledby="contact-heading">
           <div class="max-w-6xl mx-auto p-6">
-            <h2 class="text-2xl font-semibold mb-4">İletişim</h2>
+            <h2 id="contact-heading" class="text-2xl font-semibold mb-4">İletişim</h2>
             <div class="grid gap-6 md:grid-cols-2">
               <div>
                 <p class="text-slate-600">Ofisimiz: 123 Main Street, Istanbul, Turkey</p>
