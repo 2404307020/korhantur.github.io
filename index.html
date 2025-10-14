@@ -15,8 +15,8 @@
       <!-- Header (from attachments) -->
       <header class="border-b bg-white" role="banner">
         <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-slate-200 rounded-full" role="img" aria-label="Korgezi logo"></div>
+            <div class="flex items-center gap-4">
+            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=256&auto=format&fit=crop&ixlib=rb-4.0.3&s=logo" alt="Korgezi logo" class="w-10 h-10 rounded-full object-cover" />
             <span class="font-bold">Korgezi</span>
           </div>
           <nav class="hidden md:flex gap-6 text-sm text-slate-800" aria-label="Ana navigasyon">
@@ -63,6 +63,41 @@
                   </div>
                 </div>
               </article>
+              <!-- New Tour: Güneydoğu Lezzet Turu -->
+              <article class="flex gap-4 bg-white rounded shadow p-4">
+                <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd" alt="Güneydoğu mutfağı tabağı" class="w-36 h-24 object-cover rounded" loading="lazy" />
+                <div>
+                  <h3 class="font-semibold">Güneydoğu Lezzet Turu</h3>
+                  <p class="text-sm text-slate-600">3 gün, yöresel lezzetler, kültürel duraklar ve pazar gezileri.</p>
+                  <ul class="mt-2 text-sm text-slate-600 list-disc list-inside">
+                    <li>Yemek: yöresel öğünler dahil</li>
+                    <li>Ulaşım: tüm transferler dahil</li>
+                    <li>Rehberlik: yerel rehber dahil</li>
+                  </ul>
+                  <div class="mt-2 flex gap-3">
+                    <a class="text-sm text-blue-600" href="#">Detaylar</a>
+                    <a class="text-sm text-white bg-blue-600 px-3 py-1 rounded" href="#reservation">Rezervasyon</a>
+                  </div>
+                </div>
+              </article>
+              <!-- New Tour: Karadeniz Yayla ve Doğa Turu -->
+              <article class="flex gap-4 bg-white rounded shadow p-4">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=efgh" alt="Karadeniz yaylası manzarası" class="w-36 h-24 object-cover rounded" loading="lazy" />
+                <div>
+                  <h3 class="font-semibold">Karadeniz Yayla & Doğa Turu</h3>
+                  <p class="text-sm text-slate-600">5 gün, yayla yürüyüşleri, doğa ve yöresel deneyimler.</p>
+                  <ul class="mt-2 text-sm text-slate-600 list-disc list-inside">
+                    <li>Konaklama: 3 gece pansiyon konaklama</li>
+                    <li>Ulaşım: otobüs/transfer dahil</li>
+                    <li>Rehberlik: doğa rehberi ve lokal rehber dahil</li>
+                    <li>Yemek: sabah kahvaltıları dahil</li>
+                  </ul>
+                  <div class="mt-2 flex gap-3">
+                    <a class="text-sm text-blue-600" href="#">Detaylar</a>
+                    <a class="text-sm text-white bg-blue-600 px-3 py-1 rounded" href="#reservation">Rezervasyon</a>
+                  </div>
+                </div>
+              </article>
               <article class="flex gap-4 bg-white rounded shadow p-4">
                 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGvw9dOZN5aiItFWOGTyrIntjwIHzLDIhSm4a7RVmJb4JTG_az7GUIXHsOOTc0HkMPqA0RGU2zlQBkY47e280RuitKDY7tBq1MYj1pJnUn-VGlcXFsq0zerrrjWuSrlBOGP5HELOQvPG790Ghd4HbGrx2AEwOMqklctD1z9xaabCZ35ZXPEC6I56ynBerodUZQUBIJZq3VKy4iSER6oDbRl5mgg0H5kH14it1X_tBGjfcaotPlWSDDXQD5SHVDssn4JHewFwp_pWc" alt="Kapadokya balon turu" class="w-36 h-24 object-cover rounded" loading="lazy" />
                 <div>
@@ -96,6 +131,8 @@
                 <select id="tour" name="tour" required class="mt-1 block w-full rounded border p-3" aria-required="true">
                   <option value="ege">Ege Kıyıları</option>
                   <option value="kapadokya">Kapadokya</option>
+                  <option value="guneydogu">Güneydoğu Lezzet Turu</option>
+                  <option value="karadeniz">Karadeniz Yayla & Doğa Turu</option>
                 </select>
               </div>
               <div>
@@ -138,13 +175,27 @@
               <div>
                 <h3 class="font-semibold">Ekipten örnekler</h3>
                 <div class="mt-2 space-y-3">
-                  <div class="p-3 bg-white rounded shadow">
-                    <p class="font-bold">Meryem Y. — Kurucu & Operasyon</p>
-                    <p class="text-sm text-slate-600 mt-1">Sektörde 10+ yıl deneyimli; operasyon, kalite ve müşteri deneyimi uzmanı.</p>
+                  <div class="p-3 bg-white rounded shadow flex gap-3 items-start">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=96&auto=format&fit=crop&ixlib=rb-4.0.3&s=meryem" alt="Meryem Y." class="w-12 h-12 rounded-full object-cover" />
+                    <div>
+                      <p class="font-bold">Meryem Y. — Kurucu & Operasyon</p>
+                      <p class="text-sm text-slate-600 mt-1">Sektörde 10+ yıl deneyimli; operasyon, kalite ve müşteri deneyimi uzmanı.</p>
+                    </div>
                   </div>
-                  <div class="p-3 bg-white rounded shadow">
-                    <p class="font-bold">Ali D. — Tur Koordinatörü</p>
-                    <p class="text-sm text-slate-600 mt-1">Rota planlama ve yerel rehberlerle koordinasyondan sorumludur.</p>
+                  <div class="p-3 bg-white rounded shadow flex gap-3 items-start">
+                    <img src="https://images.unsplash.com/photo-1545996124-1f164b5e6cdb?q=80&w=96&auto=format&fit=crop&ixlib=rb-4.0.3&s=ali" alt="Ali D." class="w-12 h-12 rounded-full object-cover" />
+                    <div>
+                      <p class="font-bold">Ali D. — Tur Koordinatörü</p>
+                      <p class="text-sm text-slate-600 mt-1">Rota planlama ve yerel rehberlerle koordinasyondan sorumludur.</p>
+                    </div>
+                  </div>
+                  <div class="p-3 bg-white rounded shadow flex gap-3 items-start">
+                    <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=96&auto=format&fit=crop&ixlib=rb-4.0.3&s=atun" alt="Atun Çınar Demir" class="w-12 h-12 rounded-full object-cover" />
+                    <div>
+                      <p class="font-bold">Atun Çınar Demir — Kıdemli Rehber</p>
+                      <p class="text-sm text-slate-600 mt-1">Atun Çınar Demir, 12 yılı aşkın süredir Türkiye'nin çeşitli bölgelerinde rehberlik yapmaktadır. Özellikle Kapadokya, Güneydoğu ve Karadeniz rotalarında derin yerel bilgiye sahiptir. Tarihi ve kültürel anlatımları akıcı, grup yönetimi ve güvenlik konusunda deneyimlidir. Misafir ilişkileri ve özel program koordinasyonunda uzmandır.</p>
+                      <p class="text-sm text-slate-600 mt-2"><strong>Uzmanlıklar:</strong> Tarihsel rota anlatımı, güvenlik & acil durum yönetimi, gastronomi turları rehberliği.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -170,12 +221,97 @@
             </div>
           </div>
         </section>
+
+        <!-- Visitor Comments -->
+        <section id="comments" class="py-12 bg-white" role="region" aria-labelledby="comments-heading">
+          <div class="max-w-6xl mx-auto p-6">
+            <h2 id="comments-heading" class="text-2xl font-semibold mb-4">Ziyaretçi Yorumları</h2>
+            <p class="text-slate-600 mb-4">Aşağıya adınızı ve kısa yorumunuzu bırakabilirsiniz. Yorumlar tarayıcıda saklanır (gönderimler sunucuya gönderilmez).</p>
+            <form id="comment-form" class="space-y-4" onsubmit="return false;" aria-label="Yorum formu">
+              <div>
+                <label for="cname" class="block text-sm font-medium">Adınız</label>
+                <input id="cname" name="cname" required class="mt-1 block w-full rounded border p-3" placeholder="Adınız" />
+              </div>
+              <div>
+                <label for="cmessage" class="block text-sm font-medium">Yorumunuz</label>
+                <textarea id="cmessage" name="cmessage" required rows="4" class="mt-1 block w-full rounded border p-3" placeholder="Yorumunuzu yazın"></textarea>
+              </div>
+              <div>
+                <button id="csubmit" type="submit" class="px-4 py-3 bg-blue-600 text-white rounded">Yorumu Gönder</button>
+              </div>
+            </form>
+
+            <div id="comments-list" class="mt-6 space-y-4" aria-live="polite"></div>
+          </div>
+        </section>
       </main>
 
       <footer class="border-t">
         <div class="max-w-6xl mx-auto p-6 text-center text-slate-600">© 2025 Korgezi. Tüm hakları saklıdır.</div>
       </footer>
     </div>
+    <script>
+      // Simple localStorage backed comments for demo purposes
+      (function(){
+        const form = document.getElementById('comment-form');
+        const list = document.getElementById('comments-list');
+        const storageKey = 'korgezi_comments_v1';
+
+        function load(){
+          const raw = localStorage.getItem(storageKey);
+          return raw ? JSON.parse(raw) : [];
+        }
+
+        function save(comments){
+          localStorage.setItem(storageKey, JSON.stringify(comments));
+        }
+
+        function render(){
+          const comments = load();
+          list.innerHTML = '';
+          if(!comments.length){
+            list.innerHTML = '<p class="text-slate-600">Henüz yorum yok. İlk yorumu bırakın!</p>';
+            return;
+          }
+          comments.slice().reverse().forEach(c=>{
+            const el = document.createElement('div');
+            el.className = 'p-3 bg-gray-50 rounded';
+            el.innerHTML = `<p class="font-semibold">${escapeHtml(c.name)}</p><p class="text-sm text-slate-700 mt-1">${escapeHtml(c.message)}</p><p class="text-xs text-slate-500 mt-2">${new Date(c.t).toLocaleString()}</p>`;
+            list.appendChild(el);
+          });
+        }
+
+        function escapeHtml(s){
+          return String(s).replace(/[&<>"']/g, function(m){return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[m];});
+        }
+
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          const name = form.cname.value.trim();
+          const message = form.cmessage.value.trim();
+          if(!name || !message) return;
+          const comments = load();
+          comments.push({name, message, t: Date.now()});
+          save(comments);
+          form.reset();
+          render();
+        });
+
+        // Seed with initial testimonials if none exist
+        (function ensureSeed(){
+          const existing = load();
+          if(!existing.length){
+            const seed = [
+              {name: 'Ayşe K.', message: 'Korgezi ile Kapadokya turu hayatımın en güzel anılarından biri oldu. Rehberimiz çok bilgiliydi.', t: Date.now() - 1000*60*60*24*7},
+              {name: 'Mehmet T.', message: 'Rezervasyon süreci hızlı ve sorunsuzdu. Tavsiye ederim.', t: Date.now() - 1000*60*60*24*2}
+            ];
+            save(seed);
+          }
+        })();
+
+        // initial render
+        render();
+      })();
+    </script>
   </body>
 </html>
-DELETED
