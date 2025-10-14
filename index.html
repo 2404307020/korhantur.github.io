@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Korgezi - Turlar ve Rezervasyon</title>
+    <meta name="description" content="Korgezi - Türkiye turları, rezervasyon ve galeri." />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="antialiased bg-white text-slate-800" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="min-h-screen flex flex-col">
+      <!-- Header (from attachments) -->
+      <header class="border-b bg-white">
+        <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-slate-200 rounded-full"></div>
+            <span class="font-bold">Korgezi</span>
+          </div>
+          <nav class="hidden md:flex gap-6 text-sm text-slate-800">
+            <a href="#home">Ana</a>
+            <a href="#tours">Turlar</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#reservation">Rezervasyon</a>
+            <a href="#gallery">Galeri</a>
+            <a href="#contact">İletişim</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <button class="px-4 py-2 bg-blue-600 text-white rounded">Rezervasyon</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- Hero (from 1.html) -->
+        <section id="home" class="bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR9EQAD4E7Lw4aVcD-NwtWH3QBLu8hhAwe6ZTGIMg5-Lqn2xzwb_Zmd0Vrw1PidGnsQQFXrn0H8qMQ98gkCK1sjgFxPFzQVHhdD_q24jQwTAg76qIp5FYboSULUC8ydeOraISKctTM-5Y21net5JNOO3Pr81Bo4r-yrbG25OZ0LWEG31h5EGwjNLVMhjOwOsVJUP9SZOTKSuFoFDKKFV5MRjPRojPlJ_VEbLmaYi_zcGFoLApR6gWGfrIk1yRNJd5aZ5yRJ65iJrg')] bg-cover bg-center">
+          <div class="max-w-6xl mx-auto p-10 text-center text-white" style="background: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0));">
+            <h1 class="text-3xl md:text-5xl font-bold">Türkiye'yi Korgezi ile Keşfedin</h1>
+            <p class="mt-4 text-md md:text-lg">Unutulmaz turlar, deneyimli rehberler ve güvenli rezervasyonlar.</p>
+            <div class="mt-6 flex justify-center gap-4">
+              <a href="#reservation" class="px-6 py-3 bg-[#138aec] text-white rounded-md">Tur Rezervasyonu Yap</a>
+              <a href="#tours" class="px-6 py-3 border rounded-md bg-white/80 text-slate-800">Turlara Gözat</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tours (from 2.html) -->
+        <section id="tours" class="py-12">
+          <div class="max-w-6xl mx-auto p-6">
+            <h2 class="text-2xl font-semibold mb-4">Turlar</h2>
+            <div class="grid gap-6 md:grid-cols-2">
+              <!-- Tour cards (excerpted) -->
+              <article class="flex gap-4 bg-white rounded shadow p-4">
+                <div class="w-36 h-24 bg-cover rounded" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDs8MDSXrn7wpB-r4VU3GxFOEh0rhXRzb0mf_y75XY2j8d2RSMVuHuRW-COZajMhKj2Ei75n82RUxBfL4Fy0gSeZ-uFAn6t6qv4nSXP6h4yIOKktJ0VvFuD9E-dyrE0cK8ZsB6rEEnVNJdCQMvMeuT5i_GL1VsAchaSn-ADBeF7UjnXw_0J6TPNTIQVgrL2iKPqjEiGSa8L6vQYqcVwElGt4ACLU0CAWCg-9gH7pIutVtBTdGApbSYIXKPmJoLljnMIT0jfJYmu0N8');"></div>
+                <div>
+                  <h3 class="font-semibold">Ege Kıyıları Turu</h3>
+                  <p class="text-sm text-slate-600">4 gün, tarihi ve doğal güzellikleri keşfedin.</p>
+                  <div class="mt-2 flex gap-3">
+                    <a class="text-sm text-blue-600" href="#">Detaylar</a>
+                    <a class="text-sm text-white bg-blue-600 px-3 py-1 rounded" href="#reservation">Rezervasyon</a>
+                  </div>
+                </div>
+              </article>
+              <article class="flex gap-4 bg-white rounded shadow p-4">
+                <div class="w-36 h-24 bg-cover rounded" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGvw9dOZN5aiItFWOGTyrIntjwIHzLDIhSm4a7RVmJb4JTG_az7GUIXHsOOTc0HkMPqA0RGU2zlQBkY47e280RuitKDY7tBq1MYj1pJnUn-VGlcXFsq0zerrrjWuSrlBOGP5HELOQvPG790Ghd4HbGrx2AEwOMqklctD1z9xaabCZ35ZXPEC6I56ynBerodUZQUBIJZq3VKy4iSER6oDbRl5mgg0H5kH14it1X_tBGjfcaotPlWSDDXQD5SHVDssn4JHewFwp_pWc');"></div>
+                <div>
+                  <h3 class="font-semibold">Kapadokya Macerası</h3>
+                  <p class="text-sm text-slate-600">3 gün, balon turu ve yer altı şehirleri.</p>
+                  <div class="mt-2 flex gap-3">
+                    <a class="text-sm text-blue-600" href="#">Detaylar</a>
+                    <a class="text-sm text-white bg-blue-600 px-3 py-1 rounded" href="#reservation">Rezervasyon</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Reservation (from 3.html) -->
+        <section id="reservation" class="py-12 bg-gray-50">
+          <div class="max-w-3xl mx-auto p-6">
+            <h2 class="text-2xl font-semibold mb-4">Rezervasyon Talebi</h2>
+            <form action="#" class="space-y-4" aria-label="Rezervasyon Formu">
+              <div>
+                <label class="block text-sm font-medium">Ad Soyad</label>
+                <input name="fullname" required class="mt-1 block w-full rounded border p-3" placeholder="Adınızı girin" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">E-posta</label>
+                <input name="email" type="email" required class="mt-1 block w-full rounded border p-3" placeholder="mail@ornek.com" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Seçilen Tur</label>
+                <select name="tour" required class="mt-1 block w-full rounded border p-3">
+                  <option value="ege">Ege Kıyıları</option>
+                  <option value="kapadokya">Kapadokya</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Katılım Tarihi</label>
+                <input name="date" type="date" required class="mt-1 block w-full rounded border p-3" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Notlar / Özel İstek</label>
+                <textarea name="notes" class="mt-1 block w-full rounded border p-3" rows="4" placeholder="Özel isteğinizi yazın"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="px-4 py-3 bg-blue-600 text-white rounded">Gönder</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- Gallery (from 4.html) -->
+        <section id="gallery" class="py-12">
+          <div class="max-w-6xl mx-auto p-6">
+            <h2 class="text-2xl font-semibold mb-4">Galeri</h2>
+            <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+              <figure><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVqJDBfMa01nx90-SRIjaOYWqJ7H_vPJV82yO9GqVtFgM0AB-wOSGfiLJhqOBtPXiBTZrIp6_IouzZWmM79nu8joyXq4CXzj6REK37sThjFLaKhZm0fLa71Ld-I5XTWwvKcw0kKz34QGrd4G85hWNc0yyVSTs8VPmRA3P-KwJkPhB96LQgGCWdFSrXUtVjdLXKL8hKmJCu638XLuMbmINfXb9DrWhJvNVDFr2LJMBfFqbqolFcV_Qmvm2imlQElK0-KXJFO6Pyhf4" alt="Tur foto 1" loading="lazy" class="w-full rounded"/></figure>
+              <figure><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUme9GeZaLKlKq1ZqTAiaDTpEuhVQojH87RFO8KodHYg9xwinZQfzemNo33ffOR36eC7jHfHN9VRXpchVKnX7KyG7YWiju61XoZFGtDSaFt0qoBYzsaM6U4N_tPUxg6seC2mIwqk4iV1QvweQHNNYEmtg3XYKjAxHKedC-hwP8r0ABP_z_34eGLJS77WHwPIJL34DO_xb0SfO6TJggGguEft16Z9Wk2gcWuCTrOd-quL_snQdRO7ju2ivhnNUAzX11D-dlcMuoOZk" alt="Tur foto 2" loading="lazy" class="w-full rounded"/></figure>
+              <figure><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuASZkCiyy1HPsGIfv6cy5e8BFk7-86KcUqf8GhFlEyFpYvfgxA0JffvsUKlqBwu0wW1hLUVrTxpJJHkyZs-xJ3Kh2F7NDaiyhr_ROp0D8awU6Rw61srN6o28mFceEe7hqweyqlp_mI_8WGMOnA7B50wgpQhJR72JK996gjejsBQch7xumydItJwbeW9hHPHjJ00gMpOuqeBbRVeZfZbfxphvA-VuKFNpXwuLSHw8BcQDNxNVA5s9iYm8ctmD7HvxYZFHBzbta2s91o" alt="Tur foto 3" loading="lazy" class="w-full rounded"/></figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- About (from 1.html & 5.html) -->
+        <section id="about" class="py-12 bg-white">
+          <div class="max-w-6xl mx-auto p-6">
+            <h2 class="text-2xl font-semibold mb-4">Hakkımızda</h2>
+            <p class="text-slate-600 mb-4">Korgezi, Türkiye'nin benzersiz kültürel ve doğal güzelliklerini keşfetmeyi kolaylaştıran bir tur platformudur. Misyonumuz güvenli, sürdürülebilir ve unutulmaz deneyimler sunmaktır.</p>
+            <div class="grid gap-6 md:grid-cols-2">
+              <div>
+                <h3 class="font-semibold">Misyonumuz</h3>
+                <p class="text-slate-600">Yerel kültürü koruyarak ziyaretçilere kaliteli ve unutulmaz deneyimler sunmak.</p>
+              </div>
+              <div>
+                <h3 class="font-semibold">Ekipten örnekler</h3>
+                <div class="mt-2 space-y-3">
+                  <div class="p-3 bg-white rounded shadow">
+                    <p class="font-bold">Meryem Y. — Kurucu & Operasyon</p>
+                    <p class="text-sm text-slate-600 mt-1">Sektörde 10+ yıl deneyimli; operasyon, kalite ve müşteri deneyimi uzmanı.</p>
+                  </div>
+                  <div class="p-3 bg-white rounded shadow">
+                    <p class="font-bold">Ali D. — Tur Koordinatörü</p>
+                    <p class="text-sm text-slate-600 mt-1">Rota planlama ve yerel rehberlerle koordinasyondan sorumludur.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact (from 6.html) -->
+        <section id="contact" class="py-12 bg-gray-50">
+          <div class="max-w-6xl mx-auto p-6">
+            <h2 class="text-2xl font-semibold mb-4">İletişim</h2>
+            <div class="grid gap-6 md:grid-cols-2">
+              <div>
+                <p class="text-slate-600">Ofisimiz: 123 Main Street, Istanbul, Turkey</p>
+                <p class="text-slate-600">Tel: <a href="tel:+902125551234" class="text-blue-600">+90 212 555 1234</a></p>
+                <p class="text-slate-600">E-posta: <a href="mailto:info@korgezi.com" class="text-blue-600">info@korgezi.com</a></p>
+              </div>
+              <div>
+                <h3 class="font-semibold">Sık Sorulan Sorular</h3>
+                <details class="mt-2"><summary>Hangi tür turlar sunuyorsunuz?</summary><p class="p-2 text-slate-600">Kültürel, tarihi ve macera turları sunuyoruz.</p></details>
+                <details class="mt-2"><summary>Nasıl rezervasyon yaparım?</summary><p class="p-2 text-slate-600">Rezervasyon formunu doldurun veya e-posta ile bize ulaşın.</p></details>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t">
+        <div class="max-w-6xl mx-auto p-6 text-center text-slate-600">© 2025 Korgezi. Tüm hakları saklıdır.</div>
+      </footer>
+    </div>
+  </body>
+</html>
+DELETED
